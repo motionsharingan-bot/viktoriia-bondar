@@ -263,7 +263,7 @@ window.PORTFOLIO = {
             },
             {
               "label": "«Що в моїй сумочці»",
-              "evidence": "T17"
+              "href": "https://vt.tiktok.com/ZSpSsjs7f"
             },
             {
               "label": "LELÉKA про свій шлях до Євробачення — YouTube",
