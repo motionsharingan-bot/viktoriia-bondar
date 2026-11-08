@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f4ee">
+  <meta name="description" content="Привіт, я Віка — SMM, content creator, graphic design. Команда digital Євробачення Україна.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Вікторія Бондар — SMM">
+  <meta property="og:description" content="Привіт, я Віка — SMM, content creator, graphic design. Команда digital Євробачення Україна.">
+  <meta property="og:image" content="assets/derived/portrait-from-cv.jpg">
+  <title>Вікторія Бондар — SMM</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="src/styles.css">
+  <script defer src="src/content.js"></script>
+  <script defer src="src/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Перейти до змісту</a>
+  <header class="header">
+    <div class="header-inner">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">ВБ</span><span>Вікторія Бондар</span></a>
+      <nav aria-label="Основна навігація">
+        <a href="#experience">Досвід</a>
+        <a href="#audience">Аудиторія</a>
+        <a href="#video">Кейс</a>
+        <a class="nav-contact" href="#contact">Контакт</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 1. Intro: greeting + who I am (integrated CV) -->
+    <section class="hero wrap" id="top" aria-labelledby="hello">
+      <div class="hero-text">
+        <h1 id="hello"></h1>
+        <p class="hero-lead" id="hero-lead"></p>
+        <ul class="networks" id="networks" aria-label="Сторінки Євробачення Україна, які я веду"></ul>
+        <div class="actions">
+          <a class="btn btn-dark" href="#video"><span>Дивитися кейс</span> ↓</a>
+          <a class="btn" id="hero-contact" href="#contact"><span>Написати мені</span></a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img id="portrait" src="assets/derived/portrait-from-cv.jpg" width="244" height="330" alt="Вікторія Бондар">
+        <figcaption id="portrait-name"></figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap block" id="experience" aria-labelledby="exp-title">
+      <div class="block-head"><h2 id="exp-title">Досвід</h2></div>
+      <article class="card card-feature" id="exp-current"></article>
+      <div class="exp-grid" id="exp-previous"></div>
+      <div class="exp-bottom">
+        <div class="card card-soft"><h3 class="mini-title">Освіта</h3><ul class="edu" id="education"></ul></div>
+        <div class="card card-soft"><h3 class="mini-title">Що вмію</h3><ul class="chips" id="skills"></ul></div>
+      </div>
+      <p class="earlier" id="earlier"></p>
+    </section>
+
+    <!-- 2. Audience before / after -->
+    <section class="wrap block" id="audience" aria-labelledby="audience-title">
+      <div class="block-head"><h2 id="audience-title">Аудиторія: до / після</h2></div>
+      <p class="caveat" id="audience-caveat"></p>
+      <div class="pairs" id="audience-pairs"></div>
+      <p class="fine">Цифри — як на скриншотах, округлені інтерфейсом платформ. Натисніть на число, щоб побачити скриншот.</p>
+    </section>
+
+    <!-- 3. Video case -->
+    <section class="wrap block" id="video" aria-labelledby="video-title">
+      <div class="block-head"><h2 id="video-title">Кейс: <span id="video-case-title"></span></h2></div>
+      <p class="lead" id="video-intro"></p>
+      <div class="case">
+        <div class="case-tabs" role="tablist" aria-label="Платформи" id="case-tabs"></div>
+        <div class="case-panel" role="tabpanel" id="case-panel" tabindex="0"></div>
+      </div>
+      <p class="fine" id="video-match"></p>
+    </section>
+  </main>
+
+  <footer class="wrap footer" id="contact" aria-labelledby="contact-title">
+    <div class="contact-card">
+      <div>
+        <h2 id="contact-title">Контакт</h2>
+        <p>Пишіть мені в Instagram або на пошту.</p>
+      </div>
+      <div id="contact-content"></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Вікторія Бондар</span><a href="#top">Нагору ↑</a></div>
+  </footer>
+
+  <dialog id="evidence-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-header">
+      <div><span class="pill-label" id="dialog-kind">Скриншот</span><h2 id="dialog-title"></h2></div>
+      <button class="close" type="button" aria-label="Закрити перегляд">✕</button>
+    </div>
+    <div class="dialog-body">
+      <img id="dialog-image" alt="">
+      <div>
+        <p id="dialog-description"></p>
+        <a id="dialog-original" class="btn" target="_blank" rel="noopener">Відкрити оригінал ↗</a>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>
